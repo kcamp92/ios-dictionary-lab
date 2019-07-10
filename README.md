@@ -183,7 +183,27 @@ var people: [[String:String]] = [
     ]
 ]
 ```
+```
 
+var firstNames = [String]()
+
+for person in people {
+for (key,value) in person {
+if key == "firstName" {
+firstNames += [value]
+}
+}
+}
+print(firstNames)
+```
+```
+var firstNames = [String]()
+for a in people {
+if let first = a["firstName"] {
+firstNames.append(first)
+}
+} print(firstNames)
+```
 Now, create an array of strings called `fullNames` that contains the values for `“firstName”` and `“lastName”` from the dictionary separated by a space.
 
 
