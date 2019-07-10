@@ -10,7 +10,20 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 - Add two more countries to your dictionary.
 
 - Translate at least 3 of the capital names into another language.
+```
+var citiesDict = ["United States": "Washington DC", "Russia": "Moscow", "Egypt": "Cairo"]
 
+citiesDict["Jamaica"] = "Kingston"
+citiesDict["Haiti"] = "Port au Prince"
+
+print(citiesDict)
+
+citiesDict["United States"] = "estados"
+citiesDict["Russia"] = "estado"
+citiesDict["Egypt"] = "este"
+
+print(citiesDict)
+```
 
 ## Question 2
 
@@ -27,7 +40,56 @@ Fork and clone this repo. On your fork, answer and commit the follow questions. 
 - Remove the new keys made in the previous two steps
 
 - Add 2 to every value inside of `someDict`.
+```
+var someDict:[String:Int] = ["One": 1, "Two": 4, "Three": 9, "Four": 16, "Five": 25]
+var sum = 0
 
+sum += someDict["Three"]! + someDict["Five"]!
+print(sum)
+
+someDict["Six"] = 7
+
+someDict["Seven"] = 45
+
+print(someDict)
+
+var productSeven = 1
+
+for value in someDict.values {
+productSeven *= value
+
+}
+print(productSeven)
+
+someDict["ProductUpToSeven"] = productSeven
+
+var sumUpToSix = 0
+
+for value in someDict.values {
+//    sumUpToSix += value {
+
+if let one = someDict["one"],
+let two = someDict["two"],
+let three = someDict["three"],
+let four = someDict["four"],
+let five = someDict["five"],
+let six = someDict["six"] {
+someDict["sumUpToSix"]
+}
+}
+print(sumUpToSix)
+
+someDict["Six"] = nil
+someDict["Seven"] = nil
+
+print(someDict)
+
+for (key,value) in someDict {
+someDict[key] = value + 2
+
+print(key,value)
+}
+```
 
 ## Question 3
 
